@@ -1,0 +1,3 @@
+/home/basil/project/lucy/lucy/include/servo/CMakeFiles/SCServo.dir
+/home/basil/project/lucy/lucy/include/servo/CMakeFiles/edit_cache.dir
+/home/basil/project/lucy/lucy/include/servo/CMakeFiles/rebuild_cache.dir

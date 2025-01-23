@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+    <xacro:property name="chassis_length" value="0.183"/>
+    <xacro:property name="chassis_width" value="0.183"/>
+    <xacro:property name="chassis_height" value="0.131"/>
+    <xacro:property name="chassis_mass" value="1.0"/>
+
+    <xacro:property name="lidar_base_length" value="0.053"/>
+    <xacro:property name="lidar_base_width" value="0.053"/>
+    <xacro:property name="lidar_base_height" value="0.024"/>
+    <xacro:property name="lidar_base_mass" value="0.05"/>
+
+    <xacro:property name="wheel_radius" value="0.033"/>
+    <xacro:property name="wheel_length" value="0.025"/>
+    <xacro:property name="wheel_mass" value="0.05"/>
+
+    <xacro:property name="lidar_top_radius" value="0.026"/>
+    <xacro:property name="lidar_top_length" value="0.019"/>
+    <xacro:property name="lidar_top_mass" value="0.05"/>
+
+    <xacro:property name="wheel_offset_x" value="0.06175"/>
+    <xacro:property name="wheel_offset_y" value="0.114"/>
+    <xacro:property name="wheel_offset_z" value="${wheel_radius}"/>
+
+    <xacro:property name="caster_wheel_radius" value="0.032"/>
+    <xacro:property name="caster_wheel_mass" value="0.01"/>
+    <xacro:property name="caster_wheel_offset_x" value="-.06175"/>
+    <xacro:property name="caster_wheel_offset_z" value="${wheel_offset_z - wheel_radius + caster_wheel_radius}"/>
+
+
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="0.9 0.3 0.3 1"/>
+    </material>
+    <material name="light red">
+        <color rgba="0.95 0.6 0.6 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0.3 0.9 0.3 1"/>
+    </material>
+    <material name="light green">
+        <color rgba="0.6 0.95 0.6 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.3 0.3 0.9 1"/>
+    </material>
+    <material name="light blue">
+        <color rgba="0.6 0.6 0.95 1"/>
+    </material>
+
+    <material name="white">
+        <color rgba="0.9 0.9 0.9 1"/>
+    </material>
+
+</robot>

@@ -1,0 +1,9 @@
+<library path="pico_hardware_interface">
+  <class name="PicoHardware"
+         type="PicoHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware Interface for Differential Drive Arduino controller.
+    </description>
+  </class>
+</library>

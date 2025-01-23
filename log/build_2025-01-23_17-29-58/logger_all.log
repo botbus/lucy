@@ -1,0 +1,313 @@
+[0.214s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa90f0560>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa90f0170>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa90f0170>>, mixin_verb=('build',))
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.275s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/basil/lucy'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.275s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.276s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(lucy) by extension 'ros'
+[0.365s] DEBUG:colcon.colcon_core.package_identification:Package 'lucy' with type 'ros.ament_cmake' and name 'lucy'
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extensions ['ignore', 'ignore_ament_install']
+[0.365s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extension 'ignore'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extension 'ignore_ament_install'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extensions ['colcon_pkg']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extension 'colcon_pkg'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extensions ['colcon_meta']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extension 'colcon_meta'
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extensions ['ros']
+[0.366s] Level 1:colcon.colcon_core.package_identification:_identify(pico_hardware) by extension 'ros'
+[0.368s] DEBUG:colcon.colcon_core.package_identification:Package 'pico_hardware' with type 'ros.ament_cmake' and name 'pico_hardware_interface'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ignore', 'ignore_ament_install']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ignore_ament_install'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_pkg']
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_pkg'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['colcon_meta']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'colcon_meta'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extensions ['ros']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(serial) by extension 'ros'
+[0.371s] DEBUG:colcon.colcon_core.package_identification:Package 'serial' with type 'ros.ament_cmake' and name 'serial'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extensions ['ros']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(twist_stamper) by extension 'ros'
+[0.372s] DEBUG:colcon.colcon_core.package_identification:Package 'twist_stamper' with type 'ros.ament_python' and name 'twist_stamper'
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.401s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/basil/project/lucy/install
+[0.404s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 430 installed packages in /opt/ros/jazzy
+[0.407s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_args' from command line to 'None'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_target' from command line to 'None'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_clean_first' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'cmake_force_configure' from command line to 'False'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'ament_cmake_args' from command line to 'None'
+[0.513s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.514s] Level 5:colcon.colcon_core.verb:set package 'lucy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.514s] DEBUG:colcon.colcon_core.verb:Building package 'lucy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basil/lucy/build/lucy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basil/lucy/install/lucy', 'merge_install': False, 'path': '/home/basil/lucy/lucy', 'symlink_install': False, 'test_result_base': None}
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_clean_first' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'cmake_force_configure' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'ament_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'serial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.515s] DEBUG:colcon.colcon_core.verb:Building package 'serial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basil/lucy/build/serial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basil/lucy/install/serial', 'merge_install': False, 'path': '/home/basil/lucy/serial', 'symlink_install': False, 'test_result_base': None}
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_args' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target' from command line to 'None'
+[0.516s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_clean_first' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'cmake_force_configure' from command line to 'False'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'ament_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.517s] Level 5:colcon.colcon_core.verb:set package 'twist_stamper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.517s] DEBUG:colcon.colcon_core.verb:Building package 'twist_stamper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basil/lucy/build/twist_stamper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basil/lucy/install/twist_stamper', 'merge_install': False, 'path': '/home/basil/lucy/twist_stamper', 'symlink_install': False, 'test_result_base': None}
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.518s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.519s] Level 5:colcon.colcon_core.verb:set package 'pico_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.519s] DEBUG:colcon.colcon_core.verb:Building package 'pico_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/basil/lucy/build/pico_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/basil/lucy/install/pico_hardware_interface', 'merge_install': False, 'path': '/home/basil/lucy/pico_hardware', 'symlink_install': False, 'test_result_base': None}
+[0.519s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.522s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.522s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basil/lucy/serial' with build type 'ament_cmake'
+[0.523s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basil/lucy/serial'
+[0.529s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.529s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.529s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.543s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basil/lucy/lucy' with build type 'ament_cmake'
+[0.543s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basil/lucy/lucy'
+[0.544s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.559s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/basil/lucy/twist_stamper' with build type 'ament_python'
+[0.560s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'ament_prefix_path')
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.ps1'
+[0.563s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.dsv'
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/ament_prefix_path.sh'
+[0.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/serial -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/serial
+[0.588s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/lucy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/lucy -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/lucy
+[1.139s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/basil/lucy/twist_stamper'
+[7.142s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.142s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/twist_stamper': PYTHONPATH=/home/basil/lucy/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/twist_stamper build --build-base /home/basil/lucy/build/twist_stamper/build install --record /home/basil/lucy/build/twist_stamper/install.log --single-version-externally-managed install_data
+[15.948s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/twist_stamper' returned '0': PYTHONPATH=/home/basil/lucy/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/twist_stamper build --build-base /home/basil/lucy/build/twist_stamper/build install --record /home/basil/lucy/build/twist_stamper/install.log --single-version-externally-managed install_data
+[15.953s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper' for CMake module files
+[15.954s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper' for CMake config files
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper/lib'
+[15.958s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper/bin'
+[15.959s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper/lib/pkgconfig/twist_stamper.pc'
+[15.959s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages'
+[15.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('twist_stamper', 'pythonpath')
+[15.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/pythonpath.ps1'
+[15.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/pythonpath.dsv'
+[15.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/twist_stamper/share/twist_stamper/hook/pythonpath.sh'
+[15.966s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/twist_stamper/bin'
+[15.966s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(twist_stamper)
+[15.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/twist_stamper/share/twist_stamper/package.ps1'
+[15.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/twist_stamper/share/twist_stamper/package.dsv'
+[15.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/twist_stamper/share/twist_stamper/package.sh'
+[15.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/twist_stamper/share/twist_stamper/package.bash'
+[15.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/twist_stamper/share/twist_stamper/package.zsh'
+[15.994s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/twist_stamper/share/colcon-core/packages/twist_stamper)
+[16.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/serial -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/serial
+[16.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/serial -- -j4 -l4
+[17.373s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/lucy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/lucy -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/lucy
+[17.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/lucy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/lucy -- -j4 -l4
+[69.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/serial -- -j4 -l4
+[69.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/serial
+[69.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[69.476s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial' for CMake module files
+[69.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/serial
+[69.477s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial' for CMake config files
+[69.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[69.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[69.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[69.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[69.481s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib'
+[69.481s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/bin'
+[69.481s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib/pkgconfig/serial.pc'
+[69.482s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib/python3.12/site-packages'
+[69.482s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/bin'
+[69.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.ps1'
+[69.484s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/serial/share/serial/package.dsv'
+[69.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.sh'
+[69.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.bash'
+[69.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.zsh'
+[69.491s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/serial/share/colcon-core/packages/serial)
+[69.492s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(serial)
+[69.492s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial' for CMake module files
+[69.493s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial' for CMake config files
+[69.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('serial', 'cmake_prefix_path')
+[69.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.ps1'
+[69.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.dsv'
+[69.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/serial/share/serial/hook/cmake_prefix_path.sh'
+[69.497s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib'
+[69.497s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/bin'
+[69.497s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib/pkgconfig/serial.pc'
+[69.498s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/lib/python3.12/site-packages'
+[69.498s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/serial/bin'
+[69.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.ps1'
+[69.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/serial/share/serial/package.dsv'
+[69.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.sh'
+[69.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.bash'
+[69.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/serial/share/serial/package.zsh'
+[69.542s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/serial/share/colcon-core/packages/serial)
+[69.545s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/basil/lucy/pico_hardware' with build type 'ament_cmake'
+[69.546s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/basil/lucy/pico_hardware'
+[69.548s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[69.549s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[69.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/pico_hardware_interface': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/pico_hardware -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/pico_hardware_interface
+[76.910s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/pico_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake /home/basil/lucy/pico_hardware -DCMAKE_INSTALL_PREFIX=/home/basil/lucy/install/pico_hardware_interface
+[76.915s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/pico_hardware_interface': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/pico_hardware_interface -- -j4 -l4
+[114.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/pico_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/pico_hardware_interface -- -j4 -l4
+[114.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/pico_hardware_interface': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/pico_hardware_interface
+[114.455s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pico_hardware_interface)
+[114.455s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface' for CMake module files
+[114.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/pico_hardware_interface' returned '0': AMENT_PREFIX_PATH=/home/basil/lucy/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/basil/lucy/install/serial:/home/basil/project/lucy/install/pico_hardware_interface:/home/basil/project/lucy/install/serial:/home/basil/project/lucy/install/pantilt_bot_description:/home/basil/project/lucy/install/open_manipulator_x_description:/home/basil/project/lucy/install/lucy:/home/basil/project/lucy/install/dynamixel_hardware:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy LD_LIBRARY_PATH=/home/basil/lucy/install/serial/lib:${LD_LIBRARY_PATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/pico_hardware_interface
+[114.456s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface' for CMake config files
+[114.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('pico_hardware_interface', 'cmake_prefix_path')
+[114.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.ps1'
+[114.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.dsv'
+[114.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.sh'
+[114.458s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib'
+[114.458s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/bin'
+[114.459s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib/pkgconfig/pico_hardware_interface.pc'
+[114.459s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib/python3.12/site-packages'
+[114.459s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/bin'
+[114.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.ps1'
+[114.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.dsv'
+[115.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.sh'
+[116.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.bash'
+[116.280s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.zsh'
+[116.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/pico_hardware_interface/share/colcon-core/packages/pico_hardware_interface)
+[116.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pico_hardware_interface)
+[116.285s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface' for CMake module files
+[116.286s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface' for CMake config files
+[116.287s] Level 1:colcon.colcon_core.shell:create_environment_hook('pico_hardware_interface', 'cmake_prefix_path')
+[116.289s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.ps1'
+[116.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.dsv'
+[116.326s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/hook/cmake_prefix_path.sh'
+[116.327s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib'
+[116.327s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/bin'
+[116.327s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib/pkgconfig/pico_hardware_interface.pc'
+[116.328s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/lib/python3.12/site-packages'
+[116.328s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/pico_hardware_interface/bin'
+[116.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.ps1'
+[116.330s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.dsv'
+[116.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.sh'
+[116.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.bash'
+[116.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.zsh'
+[116.333s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/pico_hardware_interface/share/colcon-core/packages/pico_hardware_interface)
+[120.854s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/lucy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/lucy -- -j4 -l4
+[120.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/basil/lucy/build/lucy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/lucy
+[120.908s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lucy)
+[120.908s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy' for CMake module files
+[120.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/basil/lucy/build/lucy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/lucy
+[120.911s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy' for CMake config files
+[120.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('lucy', 'cmake_prefix_path')
+[120.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.ps1'
+[120.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.dsv'
+[120.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.sh'
+[120.916s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib'
+[120.916s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/bin'
+[120.916s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib/pkgconfig/lucy.pc'
+[120.917s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib/python3.12/site-packages'
+[120.917s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/bin'
+[120.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.ps1'
+[120.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/lucy/share/lucy/package.dsv'
+[120.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.sh'
+[120.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.bash'
+[120.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.zsh'
+[120.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/lucy/share/colcon-core/packages/lucy)
+[120.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lucy)
+[120.925s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy' for CMake module files
+[120.926s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy' for CMake config files
+[120.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('lucy', 'cmake_prefix_path')
+[120.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.ps1'
+[120.929s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.dsv'
+[120.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/basil/lucy/install/lucy/share/lucy/hook/cmake_prefix_path.sh'
+[120.932s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib'
+[120.932s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/bin'
+[120.932s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib/pkgconfig/lucy.pc'
+[120.933s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/lib/python3.12/site-packages'
+[120.933s] Level 1:colcon.colcon_core.environment:checking '/home/basil/lucy/install/lucy/bin'
+[120.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.ps1'
+[120.935s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/basil/lucy/install/lucy/share/lucy/package.dsv'
+[120.938s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.sh'
+[120.939s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.bash'
+[120.940s] INFO:colcon.colcon_core.shell:Creating package script '/home/basil/lucy/install/lucy/share/lucy/package.zsh'
+[120.941s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/basil/lucy/install/lucy/share/colcon-core/packages/lucy)
+[120.942s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[120.945s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[120.945s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[120.945s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[120.967s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[120.968s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[120.968s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[120.968s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[120.970s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[120.971s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[120.972s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basil/lucy/install/local_setup.ps1'
+[120.974s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/basil/lucy/install/_local_setup_util_ps1.py'
+[120.978s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basil/lucy/install/setup.ps1'
+[120.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basil/lucy/install/local_setup.sh'
+[120.983s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/basil/lucy/install/_local_setup_util_sh.py'
+[120.985s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basil/lucy/install/setup.sh'
+[120.989s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basil/lucy/install/local_setup.bash'
+[120.990s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basil/lucy/install/setup.bash'
+[121.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/basil/lucy/install/local_setup.zsh'
+[121.024s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/basil/lucy/install/setup.zsh'

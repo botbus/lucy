@@ -1,0 +1,39 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 40
+    lock_memory: false
+    diff_cont:  
+      type: "diff_drive_controller/DiffDriveController"
+
+    joint_broad:  # JointStateBroadcaster Configuration
+      type: "joint_state_broadcaster/JointStateBroadcaster"
+
+    imu_sensor_broadcaster:
+      type: "imu_sensor_broadcaster/IMUSensorBroadcaster"
+
+      
+diff_cont:  
+  ros__parameters:
+    type: "diff_drive_controller/DiffDriveController"
+    publish_rate: 40.0
+    base_frame_id: base_link
+    odom_frame_id: raw_odom
+    left_wheel_names: ['left_wheel_joint']
+    right_wheel_names: ['right_wheel_joint']
+    wheel_separation: 0.23
+    wheel_radius: 0.033
+    timeout: 1.0  
+    enc_counts_per_rev: 536
+    command_interface: "velocity"
+    state_interfaces: 
+      - "position"
+      - "velocity"
+    enable_odom_tf: false
+
+imu_sensor_broadcaster:
+  ros__parameters:
+    type: "imu_sensor_broadcaster/IMUSensorBroadcaster"
+    hardware_interface: "sensor_msgs::Imu"
+    sensor_name: "imu_sensor"   
+    frame_id: "base_link"
+

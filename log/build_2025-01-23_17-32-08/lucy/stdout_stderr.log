@@ -1,0 +1,59 @@
+[  9%] Built target sllidar_client
+[ 18%] Built target servo_publisher_node
+[100%] Built target sllidar_node
+-- Install configuration: ""
+-- Up-to-date: /home/basil/lucy/install/lucy/lib/lucy/servo_publisher_node
+-- Up-to-date: /home/basil/lucy/install/lucy/lib/lucy/sllidar_node
+-- Up-to-date: /home/basil/lucy/install/lucy/lib/lucy/sllidar_client
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/mapper_params_online_async.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/twist_mux.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/joystick.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/view_bot.rviz
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/map.rviz
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/ekf.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/gz_bridge.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/my_controllers copy.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/main.rviz
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/nav2_params.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/gaz_ros2_ctl_use_sim.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/my_controllers.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/empty.yaml
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/config/drive_bot.rviz
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/description
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/description/lucy.body.xacro
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/description/lucy.control.xacro
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/description/lucy.material.xacro
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/description/lucy.urdf.xacro
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/lucy.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/online_async_launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/navigation_launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/sllidar_c1_launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/pantilt_bot.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/imu_odom_pub.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/display.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/joystick.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/rsp.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/launch_robot.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/localization_launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/ekf.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/view_sllidar_c1_launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/launch/servo_jsp.launch.py
+-- Up-to-date: /home/basil/lucy/install/lucy/share/ament_index/resource_index/package_run_dependencies/lucy
+-- Up-to-date: /home/basil/lucy/install/lucy/share/ament_index/resource_index/parent_prefix_path/lucy
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/environment/ament_prefix_path.sh
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/environment/path.sh
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/environment/path.dsv
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/local_setup.bash
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/local_setup.sh
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/local_setup.zsh
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/local_setup.dsv
+-- Installing: /home/basil/lucy/install/lucy/share/lucy/package.dsv
+-- Up-to-date: /home/basil/lucy/install/lucy/share/ament_index/resource_index/packages/lucy
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/cmake/lucyConfig.cmake
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/cmake/lucyConfig-version.cmake
+-- Up-to-date: /home/basil/lucy/install/lucy/share/lucy/package.xml

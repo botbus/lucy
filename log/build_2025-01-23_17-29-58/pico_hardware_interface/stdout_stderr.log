@@ -1,0 +1,68 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /home/basil/pio_env/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found serial: 1.2.1 (/home/basil/lucy/install/serial/share/serial/cmake)
+-- Found hardware_interface: 4.20.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found controller_manager: 4.20.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+-- Configuring done (7.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/basil/lucy/build/pico_hardware_interface
+[ 25%] [32mBuilding CXX object CMakeFiles/pico_hardware_interface.dir/src/pico_hardware_interface.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pico_hardware_interface.dir/src/arduino_comms.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/pico_hardware_interface.dir/src/wheel.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libpico_hardware_interface.so[0m
+[100%] Built target pico_hardware_interface
+-- Install configuration: ""
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/robot_hardware.xml
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/lib/pico_hardware_interface/libpico_hardware_interface.so
+-- Set non-toolchain portion of runtime path of "/home/basil/lucy/install/pico_hardware_interface/lib/pico_hardware_interface/libpico_hardware_interface.so" to ""
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/controllers
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/controllers/robot_controller_example.yaml
+-- Up-to-date: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/fake_robot.launch.py
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/test_robot.launch.py
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/library_path.sh
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/library_path.dsv
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/ament_index/resource_index/package_run_dependencies/pico_hardware_interface
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/ament_index/resource_index/parent_prefix_path/pico_hardware_interface
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/ament_prefix_path.sh
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/ament_prefix_path.dsv
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/path.sh
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/environment/path.dsv
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.bash
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.sh
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.zsh
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.dsv
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.dsv
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/ament_index/resource_index/packages/pico_hardware_interface
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/pico_hardware_interface
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/cmake/pico_hardware_interfaceConfig.cmake
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/cmake/pico_hardware_interfaceConfig-version.cmake
+-- Installing: /home/basil/lucy/install/pico_hardware_interface/share/pico_hardware_interface/package.xml

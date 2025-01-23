@@ -1,7 +1,9 @@
+.vscode/
 devel/
 logs/
 build/
 bin/
+install/
 lib/
 msg_gen/
 srv_gen/

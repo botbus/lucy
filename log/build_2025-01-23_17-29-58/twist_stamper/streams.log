@@ -1,0 +1,42 @@
+[13.120s] Invoking command in '/home/basil/lucy/twist_stamper': PYTHONPATH=/home/basil/lucy/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/twist_stamper build --build-base /home/basil/lucy/build/twist_stamper/build install --record /home/basil/lucy/build/twist_stamper/install.log --single-version-externally-managed install_data
+[14.175s] running egg_info
+[14.175s] creating ../build/twist_stamper/twist_stamper.egg-info
+[14.215s] writing ../build/twist_stamper/twist_stamper.egg-info/PKG-INFO
+[14.216s] writing dependency_links to ../build/twist_stamper/twist_stamper.egg-info/dependency_links.txt
+[14.217s] writing entry points to ../build/twist_stamper/twist_stamper.egg-info/entry_points.txt
+[14.217s] writing requirements to ../build/twist_stamper/twist_stamper.egg-info/requires.txt
+[14.217s] writing top-level names to ../build/twist_stamper/twist_stamper.egg-info/top_level.txt
+[14.217s] writing manifest file '../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+[14.360s] reading manifest file '../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+[14.360s] adding license file 'LICENSE'
+[14.362s] writing manifest file '../build/twist_stamper/twist_stamper.egg-info/SOURCES.txt'
+[14.362s] running build
+[14.363s] running build_py
+[14.363s] creating /home/basil/lucy/build/twist_stamper/build
+[14.363s] creating /home/basil/lucy/build/twist_stamper/build/lib
+[14.364s] creating /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper
+[14.364s] copying twist_stamper/twist_unstamper.py -> /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper
+[14.364s] copying twist_stamper/twist_stamper.py -> /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper
+[14.365s] copying twist_stamper/__init__.py -> /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper
+[14.366s] running install
+[14.376s] running install_lib
+[14.419s] creating /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+[14.420s] copying /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper/twist_unstamper.py -> /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+[14.420s] copying /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper/twist_stamper.py -> /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+[14.420s] copying /home/basil/lucy/build/twist_stamper/build/lib/twist_stamper/__init__.py -> /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper
+[14.421s] byte-compiling /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/twist_unstamper.py to twist_unstamper.cpython-312.pyc
+[14.422s] byte-compiling /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/twist_stamper.py to twist_stamper.cpython-312.pyc
+[14.424s] byte-compiling /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper/__init__.py to __init__.cpython-312.pyc
+[14.424s] running install_data
+[14.424s] creating /home/basil/lucy/install/twist_stamper/share/ament_index
+[14.425s] creating /home/basil/lucy/install/twist_stamper/share/ament_index/resource_index
+[14.425s] creating /home/basil/lucy/install/twist_stamper/share/ament_index/resource_index/packages
+[14.425s] copying resource/twist_stamper -> /home/basil/lucy/install/twist_stamper/share/ament_index/resource_index/packages
+[14.425s] copying package.xml -> /home/basil/lucy/install/twist_stamper/share/twist_stamper
+[14.425s] running install_egg_info
+[14.507s] Copying ../build/twist_stamper/twist_stamper.egg-info to /home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages/twist_stamper-0.0.5-py3.12.egg-info
+[14.513s] running install_scripts
+[15.217s] Installing twist_stamper script to /home/basil/lucy/install/twist_stamper/lib/twist_stamper
+[15.221s] Installing twist_unstamper script to /home/basil/lucy/install/twist_stamper/lib/twist_stamper
+[15.221s] writing list of installed files to '/home/basil/lucy/build/twist_stamper/install.log'
+[15.388s] Invoked command in '/home/basil/lucy/twist_stamper' returned '0': PYTHONPATH=/home/basil/lucy/build/twist_stamper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/basil/lucy/install/twist_stamper/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/twist_stamper build --build-base /home/basil/lucy/build/twist_stamper/build install --record /home/basil/lucy/build/twist_stamper/install.log --single-version-externally-managed install_data

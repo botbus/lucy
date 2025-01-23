@@ -1,0 +1,54 @@
+[0.021s] Invoking command in '/home/basil/project/lucy/pico_hardware/build/pico_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/basil/project/lucy/pico_hardware/build/pico_hardware_interface -- -j4 -l4
+[0.076s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.416s] -- Found serial: 1.2.1 (/home/basil/project/lucy/install/serial/share/serial/cmake)
+[0.418s] -- Found hardware_interface: 4.20.0 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[0.455s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.469s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.485s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.506s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.817s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[0.917s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.922s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.954s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[0.970s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[0.996s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[1.011s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[1.029s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.208s] -- Found controller_manager: 4.20.0 (/opt/ros/jazzy/share/controller_manager/cmake)
+[1.517s] -- Configuring done (1.4s)
+[1.561s] -- Generating done (0.0s)
+[1.575s] -- Build files have been written to: /home/basil/project/lucy/pico_hardware/build/pico_hardware_interface
+[1.673s] [ 25%] [32m[1mLinking CXX shared library libpico_hardware_interface.so[0m
+[2.142s] [100%] Built target pico_hardware_interface
+[2.165s] Invoked command in '/home/basil/project/lucy/pico_hardware/build/pico_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/basil/project/lucy/pico_hardware/build/pico_hardware_interface -- -j4 -l4
+[2.186s] Invoking command in '/home/basil/project/lucy/pico_hardware/build/pico_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/basil/project/lucy/pico_hardware/build/pico_hardware_interface
+[2.203s] -- Install configuration: ""
+[2.203s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/robot_hardware.xml
+[2.204s] -- Installing: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/lib/pico_hardware_interface/libpico_hardware_interface.so
+[2.205s] -- Set non-toolchain portion of runtime path of "/home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/lib/pico_hardware_interface/libpico_hardware_interface.so" to ""
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/controllers
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/controllers/robot_controller_example.yaml
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/fake_robot.launch.py
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/test_robot.launch.py
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/library_path.sh
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/library_path.dsv
+[2.206s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/ament_index/resource_index/package_run_dependencies/pico_hardware_interface
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/ament_index/resource_index/parent_prefix_path/pico_hardware_interface
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/ament_prefix_path.sh
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/ament_prefix_path.dsv
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/path.sh
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/environment/path.dsv
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.bash
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.sh
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.zsh
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/local_setup.dsv
+[2.207s] -- Installing: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/package.dsv
+[2.207s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/ament_index/resource_index/packages/pico_hardware_interface
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/pico_hardware_interface
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/cmake/pico_hardware_interfaceConfig.cmake
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/cmake/pico_hardware_interfaceConfig-version.cmake
+[2.208s] -- Up-to-date: /home/basil/project/lucy/pico_hardware/install/pico_hardware_interface/share/pico_hardware_interface/package.xml
+[2.210s] Invoked command in '/home/basil/project/lucy/pico_hardware/build/pico_hardware_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/basil/project/lucy/pico_hardware/build/pico_hardware_interface

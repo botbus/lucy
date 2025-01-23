@@ -1,0 +1,4 @@
+Invoking command in '/home/basil/lucy/build/lucy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/lucy -- -j4 -l4
+Invoked command in '/home/basil/lucy/build/lucy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --build /home/basil/lucy/build/lucy -- -j4 -l4
+Invoking command in '/home/basil/lucy/build/lucy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/lucy
+Invoked command in '/home/basil/lucy/build/lucy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/basil/project/lucy/install/twist_stamper:/opt/ros/jazzy VIRTUAL_ENV_PROMPT=(pio_env) /usr/bin/cmake --install /home/basil/lucy/build/lucy
