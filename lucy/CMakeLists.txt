@@ -27,89 +27,78 @@ FILE(GLOB SLLIDAR_SDK_SRC
   "${SLLIDAR_SDK_PATH}/src/dataunpacker/*.cpp"
   "${SLLIDAR_SDK_PATH}/src/dataunpacker/unpacker/*.cpp"
 )
+include_directories(
+    ${PROJECT_SOURCE_DIR}/sdk/include
+    ${PROJECT_SOURCE_DIR}/sdk/src
+    ${PROJECT_SOURCE_DIR}/sdk/src/arch/linux
+)
+
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(geometry_msgs REQUIRED) 
-find_package(tf2_ros REQUIRED) 
-find_package(tf2 REQUIRED) 
-find_package(tf2_geometry_msgs REQUIRED)
-find_package(nav_msgs REQUIRED)
-# find_package(PCL REQUIRED)
-# find_package(pcl_conversions REQUIRED)
+# find_package(std_msgs REQUIRED)
+# find_package(geometry_msgs REQUIRED) 
+# find_package(tf2_ros REQUIRED) 
+# find_package(tf2 REQUIRED) 
+# find_package(tf2_geometry_msgs REQUIRED)
+# find_package(nav_msgs REQUIRED)
+# find_package(nav2_msgs REQUIRED)
 
-include_directories(
-  ${SLLIDAR_SDK_PATH}/include
-  ${SLLIDAR_SDK_PATH}/src
-  ${Boost_INCLUDE_DIRS}
-  include/servo
-)
-link_directories(include/servo)
-link_libraries(libSCServo.a ${tf2_LIBRARIES} ${tf2_ros_LIBRARIES} ${tf2_geometry_msgs_LIBRARIES})
 
-add_executable(sllidar_client src/sllidar_client.cpp)
-# add_executable(imu_odom_node src/imu_odom_node.cpp)
-add_executable(sllidar_node	src/sllidar_node.cpp ${SLLIDAR_SDK_SRC})
-add_executable(servo_publisher_node src/servo_publisher_node.cpp)
+# include_directories(
+#   ${SLLIDAR_SDK_PATH}/include
+#   ${SLLIDAR_SDK_PATH}/src
+#   ${Boost_INCLUDE_DIRS}
+#   include/servo
+# )
+# link_directories(include/servo)
+# link_libraries(libSCServo.a ${tf2_LIBRARIES} ${tf2_ros_LIBRARIES} ${tf2_geometry_msgs_LIBRARIES})
+
+add_executable(lidar_client src/lidar_client.cpp)
+add_executable(lidar_node	src/lidar_node.cpp ${SLLIDAR_SDK_SRC})
 # add_executable(joystick_vibration src/joystick_vibration.cpp)
-# add_executable(cmd_vel_relay src/cmd_vel_relay_node.cpp)
-# add_executable(my_point_cloud_node src/my_point_cloud_node.cpp)
+# add_definitions(${PCL_DEFINITIONS})
 
-# target_include_directories(my_point_cloud_node PUBLIC ${PCL_INCLUDE_DIRS})
-# target_link_libraries(my_point_cloud_node ${PCL_LIBRARIES})
-add_definitions(${PCL_DEFINITIONS})
-ament_target_dependencies(sllidar_node
+
+ament_target_dependencies(lidar_node
   rclcpp
   std_srvs
   sensor_msgs
 )
-# ament_target_dependencies(my_point_cloud_node
-#   rclcpp
-#   std_srvs
-#   sensor_msgs
-#   tf2_ros
-#   geometry_msgs
-#   PCL
-#   pcl_conversions
-# )
+
+ament_target_dependencies(lidar_client
+  rclcpp
+  std_srvs
+  sensor_msgs
+)
+
 # ament_target_dependencies(
-#   imu_odom_node
+#   joystick_vibration
 #   rclcpp
 #   std_msgs
 #   sensor_msgs
 #   nav_msgs
-
-# )
-
-ament_target_dependencies(
-  servo_publisher_node
-  rclcpp
-  std_msgs
-  geometry_msgs
-  tf2_ros
-  sensor_msgs
-)
-ament_target_dependencies(sllidar_client
-  rclcpp
-  std_srvs
-  sensor_msgs
-)
-# ament_target_dependencies(cmd_vel_relay
-#   rclcpp
 #   geometry_msgs
 # )
+
+
+# ament_target_dependencies(
+#   servo_publisher_node
+#   rclcpp
+#   std_msgs
+#   geometry_msgs
+#   tf2_ros
+#   sensor_msgs
+# )
+
+
 install(
   TARGETS 
-  # cmd_vel_relay
-  # imu_odom_node
-  servo_publisher_node
-  sllidar_node 
-  sllidar_client
+  lidar_node 
+  lidar_client
   # joystick_vibration
-  # my_point_cloud_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

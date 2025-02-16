@@ -65,17 +65,51 @@ void ArduinoComms::reset(int fd)
     sendMsg(fd, "r \n");
 }
 
-void ArduinoComms::readEncoderValues(int fd,
+// void ArduinoComms::calcKalman(double &KalmanState, double &KalmanUncertainty, double KalmanMeasurement)
+// {
+//     constexpr double KalmanInput = 0.0;
+//     constexpr double ProcessNoise = 10.0;
+//     constexpr double NoiseCovariance = 20;
+//     constexpr double StateTransition = 1;
+//     constexpr double controlMatrix = 0.004;
+//     constexpr double observationMatrix = 1;
+
+//     // Predict phase
+//     KalmanState = StateTransition * KalmanState + controlMatrix * KalmanInput;
+//     KalmanUncertainty += ProcessNoise;
+
+//     // Update phase
+//     double KalmanGain = KalmanUncertainty * observationMatrix / (observationMatrix * KalmanUncertainty + NoiseCovariance);
+//     KalmanState = KalmanState + KalmanGain * (KalmanMeasurement - observationMatrix * KalmanState);
+//     KalmanUncertainty = (1 - KalmanGain) * KalmanUncertainty + ProcessNoise;
+//     RCLCPP_INFO(rclcpp::get_logger("kalman"), "Measurement: %.2f | State: %.2f | Uncertainty: %.2f",
+//                 KalmanMeasurement, KalmanState, KalmanUncertainty);
+// }
+
+void ArduinoComms::readEncoderValues(std::string serial_device, int fd,
                                      long &val_1, long &val_2,
                                      double &gyrx, double &gyry, double &gyrz,
                                      double &accx, double &accy, double &accz,
                                      double &quatw, double &quatx, double &quaty, double &quatz)
 {
+    static long fullCount{};
+    static long errorCount{};
+
     std::string inputString = readFromSerial(fd);
     const std::string delimiter = "|";
+    size_t pos = 0;
+    std::string target = "-inf";
+    std::string replacement = "0.0";
+    bool errorFound = false;
+    while ((pos = inputString.find(target, pos)) != std::string::npos)
+    {
+        inputString.replace(pos, target.length(), replacement);
+        pos += replacement.length();
+        errorFound = true;
+    }
     size_t start = inputString.find_first_of(delimiter, 0);
     size_t end = 0;
-
+    RCLCPP_DEBUG(rclcpp::get_logger("ArduinoComms"), "Read from %s: %s", serial_device.c_str(), inputString.c_str());
     if (start != std::string::npos)
         start += 1;
     while (start < inputString.size())
@@ -113,10 +147,6 @@ void ArduinoComms::readEncoderValues(int fd,
                 gyrx = gyr[0];
                 gyry = gyr[1];
                 gyrz = gyr[2];
-
-                // imu_msg.angular_velocity.x = gyr[0]; // Set gyro X value
-                // imu_msg.angular_velocity.y = gyr[1]; // Set gyro Y value
-                // imu_msg.angular_velocity.z = gyr[2];
             }
             if (parsedJson.contains("ACC") && parsedJson["ACC"].is_array())
             {
@@ -125,20 +155,17 @@ void ArduinoComms::readEncoderValues(int fd,
                 accx = acc[0];
                 accy = acc[1];
                 accz = acc[2];
-                // imu_msg.linear_acceleration.x = acc[0]; // Set accelerometer X value
-                // imu_msg.linear_acceleration.y = acc[1]; // Set accelerometer Y value
-                // imu_msg.linear_acceleration.z = acc[2];
             }
             if (parsedJson.contains("QUAT") && parsedJson["QUAT"].is_array())
             {
                 auto quat = parsedJson["QUAT"];
-                quatw = quat[0];
                 quatx = quat[1];
                 quaty = quat[2];
                 quatz = quat[3];
-                // imu_msg.orientation.x = quat[0]; // Set orientation if you have a sensor for it
-                // imu_msg.orientation.y = quat[1];
-                // imu_msg.orientation.z = quat[2];
+                if (!errorFound)
+                    quatw = quat[0];
+                else
+                    quatw = sqrt(1.0 - ((quatx * quatx) + (quaty * quaty) + (quatz * quatz)));
             }
 
             if (parsedJson.contains("ENC") && parsedJson["ENC"].is_array())
@@ -147,18 +174,22 @@ void ArduinoComms::readEncoderValues(int fd,
                 val_1 = enc[0];
                 val_2 = enc[1];
             }
+            fullCount++;
         }
         catch (const json::exception &e)
         {
-            std::cerr << "JSON parsing error: " << e.what() << std::endl;
-
-            std::cout << "\n\n\n"
-                      << inputString << "\n\n\n";
-            std::cout << "\n\n\n"
-                      << jsonString << "\n\n\n";
+            RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), "JSON parsing error: %s", e.what());
+            RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), "inputString: %s\njsonString:  %s\n", inputString.c_str(), jsonString.c_str());
+            errorCount++;
         }
 
         start = end + 1;
+    }
+    if (fullCount >= 1000)
+    {
+        RCLCPP_DEBUG(rclcpp::get_logger("ArduinoComms"), "Data loss: %f%", ((float)errorCount / (float)fullCount) * 100);
+        fullCount = 0;
+        errorCount = 0;
     }
 }
 std::string ArduinoComms::readFromSerial(int fd)
@@ -180,25 +211,29 @@ std::string ArduinoComms::readFromSerial(int fd)
 
         return result;
     }
-    // else if (bytesRead == -1)
-    // {
-    //     perror("Error reading from serial port");
-    // }
+    else if (bytesRead == -1)
+    {
+
+        RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), "Error reading from serial port.");
+    }
     return "";
 }
 void ArduinoComms::setMotorValues(int fd, int val_1, int val_2)
 {
     std::stringstream ss;
-    ss << "m " << val_1 << " " << val_2 << "\r";
+    ss << "m " << std::clamp(val_1, -255, 255) << " " << std::clamp(val_2, -255, 255) << "\r";
+    if (val_1 != 0 && val_2 != 0)
+        RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), "Driving robot: %s", ss.str().c_str());
     sendMsg(fd, ss.str());
 }
 
-void ArduinoComms::setPidValues(int fd, float k_p, float k_d, float k_i, float k_o)
-{
-    std::stringstream ss;
-    ss << "u " << k_p << ":" << k_d << ":" << k_i << ":" << k_o << "\r";
-    sendMsg(fd, ss.str());
-}
+// void ArduinoComms::setPidValues(int fd, float k_p, float k_i, float k_d)
+// {
+//     std::stringstream ss;
+//     ss << "u " << k_p << ":" << k_i << ":" << k_d << "\r";
+//     sendMsg(fd, ss.str());
+//     RCLCPP_INFO(rclcpp::get_logger("ArduinoComms"), "PID Parameters sent");
+// }
 
 void ArduinoComms::sendMsg(int fd, const std::string &msg_to_send)
 {

@@ -49,13 +49,13 @@ link_libraries( ${tf2_LIBRARIES} ${tf2_ros_LIBRARIES} ${tf2_geometry_msgs_LIBRAR
 
 
 
-ament_target_dependencies(sllidar_client
+ament_target_dependencies(lidar_client
   rclcpp
   std_srvs
   sensor_msgs
 )
 
-ament_target_dependencies(sllidar_node
+ament_target_dependencies(lidar_node
   rclcpp
   std_srvs
   sensor_msgs
@@ -78,16 +78,16 @@ ament_target_dependencies(servo_publisher_node
 add_executable(
   imu_odom_node src/imu_odom_node.cpp
   servo_publisher_node src/servo_publisher_node.cpp
-  sllidar_node	src/sllidar_node.cpp ${SLLIDAR_SDK_SRC}
-  sllidar_client src/sllidar_client.cpp
+  lidar_node	src/lidar_node.cpp ${SLLIDAR_SDK_SRC}
+  lidar_client src/lidar_client.cpp
 )
 
 install(
   TARGETS 
   imu_odom_node
   servo_publisher_node
-  sllidar_node 
-  sllidar_client
+  lidar_node 
+  lidar_client
   
   DESTINATION lib/${PROJECT_NAME}
 )

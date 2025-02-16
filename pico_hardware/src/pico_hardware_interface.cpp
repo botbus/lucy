@@ -106,7 +106,7 @@ CallbackReturn PicoHardware::on_activate(const rclcpp_lifecycle::State & /* prev
   RCLCPP_DEBUG(rclcpp::get_logger("PicoHardware"), "Starting Controller...");
 
   arduino_.reset(serial_fd_);
-  arduino_.setPidValues(serial_fd_, 30, 20, 0, 100);
+  // arduino_.setPidValues(serial_fd_, 0.7, 0.6, 0.02);
 
   return CallbackReturn::SUCCESS;
 }
@@ -126,7 +126,7 @@ return_type PicoHardware::read(
   double deltaSeconds = diff.count();
   time_ = new_time;
 
-  arduino_.readEncoderValues(serial_fd_,
+  arduino_.readEncoderValues(cfg_.device, serial_fd_,
                              l_wheel_.enc, r_wheel_.enc,
                              imu_.angular_velocity.x, imu_.angular_velocity.y, imu_.angular_velocity.z,
                              imu_.linear_acceleration.x, imu_.linear_acceleration.y, imu_.linear_acceleration.z,
@@ -146,6 +146,54 @@ return_type PicoHardware::read(
 return_type PicoHardware::write(
     const rclcpp::Time & /* time */, const rclcpp::Duration & /* period */)
 {
+  // double max_vel = 30;
+  // double min_vel = -30;
+  // std::vector<double> left_speeds;
+  // std::vector<double> right_speeds;
+  // left_speeds.push_back(l_wheel_.cmd);
+  // right_speeds.push_back(r_wheel_.cmd);
+  // if (left_speeds.size() > 10)
+  // {
+  //   left_speeds.erase(left_speeds.begin());
+  // }
+  // if (right_speeds.size() > 10)
+  // {
+  //   right_speeds.erase(right_speeds.begin());
+  // }
+
+  // double average_left = 0.0;
+  // for (double input : left_speeds)
+  // {
+  //   average_left += input;
+  // }
+
+  // double average_right = 0.0;
+  // for (double input : right_speeds)
+  // {
+  //   average_right += input;
+  // }
+
+  // average_left /= left_speeds.size();   // Get the average of the last 10 inputs
+  // average_right /= right_speeds.size(); // Get the average of the last 10 inputs
+  // if (abs(average_left) < 4 && abs(average_left) > 0.1)
+  // {
+  //   l_wheel_.cmd *= 10;
+  // }
+  // if (abs(average_right) < 4.0 && abs(average_right) > 0.1)
+  // {
+  //   r_wheel_.cmd *= 10;
+  // }
+  // if (l_wheel_.cmd < 0)
+  //   l_wheel_.cmd = -max_vel;
+  // else if (l_wheel_.cmd > 0)
+  //   l_wheel_.cmd = max_vel;
+  // if (r_wheel_.cmd < 0)
+  //   r_wheel_.cmd = -max_vel;
+  // else if (r_wheel_.cmd > 0)
+  //   r_wheel_.cmd = max_vel;
+  if (l_wheel_.cmd != 0 || r_wheel_.cmd != 0)
+    RCLCPP_INFO(rclcpp::get_logger("PicoHardware"), "Left command: %f. Right command: %f", l_wheel_.cmd, r_wheel_.cmd);
+
   arduino_.setMotorValues(serial_fd_, l_wheel_.cmd / l_wheel_.rads_per_count / cfg_.loop_rate, r_wheel_.cmd / r_wheel_.rads_per_count / cfg_.loop_rate);
 
   return return_type::OK;

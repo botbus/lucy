@@ -45,7 +45,8 @@ private:
   Wheel r_wheel_;
   IMUSensor imu_;
   int serial_fd_;
-
+  std::vector<double> left_speeds;
+  std::vector<double> right_speeds;
   std::chrono::time_point<std::chrono::system_clock> time_;
 };
 

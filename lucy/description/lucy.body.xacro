@@ -86,12 +86,12 @@
             <material name="black"></material>
         </visual>
     </link>
-    <joint name="base_lidar_joint" type="revolute">
+    <joint name="base_lidar_joint" type="fixed">
         <parent link="base_link" />
         <child link="lidar_box_link" />
         <origin xyz="0 0 0.22" rpy="0 0 0" />
-        <axis xyz="0 1 0" />
-        <limit lower="-0.523" upper="0.523" effort="10" velocity="1" />
+        <!-- <axis xyz="0 1 0" /> -->
+        <!-- <limit lower="-0.523" upper="0.523" effort="10" velocity="1" /> -->
     </joint>
 
     <link name="lidar_box_link">

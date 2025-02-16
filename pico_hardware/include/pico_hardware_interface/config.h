@@ -7,11 +7,11 @@ struct Config
 {
   std::string left_wheel_name = "left_wheel";
   std::string right_wheel_name = "right_wheel";
-  float loop_rate = 30;
-  std::string device = "/dev/ttyUSB0";
+  float loop_rate = 10;
+  std::string device = "/dev/ttyACM0";
   long baud_rate = 115200;
   long timeout = 1000;
-  long enc_counts_per_rev = 1920;
+  long enc_counts_per_rev = 546;
 };
 
 struct IMUSensorParams

@@ -1,0 +1,44 @@
+### ekf config file ###
+ekf_filter_node:
+        ros__parameters:
+            frequency: 50.0
+            two_d_mode: true
+            publish_tf: true
+            publish_acceleration: true
+            map_frame: map              # Defaults to "map" if unspecified
+            odom_frame: odom            # Defaults to "odom" if unspecified
+            base_link_frame: base_link  # Defaults to "base_link" if unspecified
+            world_frame: odom           # Defaults to the value of odom_frame if unspecified
+
+            odom0: /diff_drive_controller/odom
+        # #        [x_pos   , y_pos    , z_pos,
+        # #         roll    , pitch    , yaw,
+        # #         x_vel   , y_vel    , z_vel,
+        # #         roll_vel, pitch_vel, yaw_vel,
+        # #         x_accel , y_accel  , z_accel]
+            odom0_config: [true,  true,  false,
+                           false, false, true,
+                           true, true, true,
+                           false, false, true,
+                           false, false, false]
+
+            odom0_queue_size: 10
+            odom0_differential: false
+            odom0_relative: false
+            imu0: /imu_sensor_broadcaster/imu
+        #        [x_pos   , y_pos    , z_pos,
+        #         roll    , pitch    , yaw,
+        #         x_vel   , y_vel    , z_vel,
+        #         roll_vel, pitch_vel, yaw_vel,
+        #         x_accel , y_accel  , z_accel]
+            imu0_config: [false, false, false,
+                          true, true ,  true,
+                          false, false, false,
+                          false,  false,  true,
+                          true,  false,  false]
+
+            imu0_differential: false
+            imu0_relative: true
+            imu0_queue_size: 10 
+            imu0_remove_gravitational_acceleration: true
+            
